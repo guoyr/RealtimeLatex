@@ -16,5 +16,9 @@
   }
 , "scripts":
   { "test": "nodeunit test/*/*"
-  }
+  },
+  "engines": {
+    "node" : "0.4.10",
+    "npm" : "0.2.19"
+  } 
 }
