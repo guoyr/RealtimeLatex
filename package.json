@@ -1,7 +1,8 @@
 { "name": "default"
 , "version": "0.0.1"
 , "engines" : {
-   "node": "0.4.10"
+   "node": "0.4.10",
+   "npm": "
  }
 , "main": "server.js"
 , "dependencies":
