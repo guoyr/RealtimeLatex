@@ -1,6 +1,6 @@
 { "name": "default"
 , "version": "0.0.1"
-, "engines": ["node >= 0.4.0"]
+, "engines": ["node >= 0.4.10"]
 , "main": "server.js"
 , "dependencies":
   { "ejs":              "*"
@@ -16,9 +16,5 @@
   }
 , "scripts":
   { "test": "nodeunit test/*/*"
-  },
-  "engines": {
-    "node" : "0.4.10",
-    "npm" : "0.2.19"
-  } 
+  }
 }
