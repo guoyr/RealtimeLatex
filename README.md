@@ -1,5 +1,5 @@
-REAL TIME LATEX EDITOR
-======================
+FLYLATEX EDITOR: REAL TIME LATEX EDITOR
+=======================================
 
 By Daniel Alabi, Robert Guo
 
