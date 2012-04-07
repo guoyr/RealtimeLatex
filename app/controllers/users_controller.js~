@@ -1,0 +1,18 @@
+load("application");
+/*
+ * 
+ * variables that we somehome need to get
+ */
+var currUser = "Daniel"; 
+
+action("signin", function() {
+	  render({
+	      title: "Sign In"
+	  });
+       });
+
+action("home", function() {
+					 render({
+											title: "Home Page for " + currUser
+									});
+       });
