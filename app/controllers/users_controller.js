@@ -16,4 +16,5 @@ action(function index() {
 action('submit', function(){
 
 	console.log(req);
+	render(index.jade);
 });
