@@ -13,8 +13,10 @@ action(function index() {
 									});
        });
 
-action('submit', function(){
+action('login', function(){
 
 	console.log(req);
 	render(index.jade);
+
+	
 });
