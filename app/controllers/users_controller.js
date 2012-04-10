@@ -19,7 +19,7 @@ var User = new Schema({
 	username: String,
 	email: String,
 	password: String,
-	docID: [ObjectId]
+	docID: [Object]
 });
 
 var userModel = mongoose.model('User', User);
