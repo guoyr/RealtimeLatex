@@ -49,7 +49,5 @@ var documentModel = mongoose.model('Document', Document);
  		};
  	})
  	*/
- 	render({
- 		username = req.body.username
- 		});
+ 	render();
  });
