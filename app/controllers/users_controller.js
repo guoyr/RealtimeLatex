@@ -44,4 +44,8 @@ var userModel = mongoose.model('User', User);
  	console.log("submit");
  	render(index.jade);
  	u1 = new UserModel();
+ 	u1.username = "Daniel";
+ 	u1.passowrd = "1234";
+ 	u1.save();
+ 	console.log("u1 saved");
  });
