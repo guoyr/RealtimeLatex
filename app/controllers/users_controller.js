@@ -43,7 +43,7 @@ var userModel = mongoose.model('User', User);
  action(function submit() {
 
  	console.log("at submit");
- 	console.log(req);
+ 	console.log(req.body.username);
  	render();
  	u1 = new userModel();
  	u1.username = "Daniel";
