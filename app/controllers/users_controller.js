@@ -5,7 +5,7 @@ load("application");
  */
 var currUser = "Daniel"; 
 
-var mongoose = requrie('mongoose');
+var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://heroku:heroku@staff.mongohq.com:10090/app3589375');
 
