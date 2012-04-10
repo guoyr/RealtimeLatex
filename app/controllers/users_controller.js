@@ -34,14 +34,16 @@ var userModel = mongoose.model('User', User);
 
  action('login', function(){
 
- 	//console.log(req);
+ 	console.log(req);
  	render(index.jade);
 
 
  });
 
  action(function submit() {
+
  	console.log("at submit");
+ 	console.log("req");
  	render();
  	u1 = new userModel();
  	u1.username = "Daniel";
