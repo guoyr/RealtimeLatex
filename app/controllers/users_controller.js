@@ -16,7 +16,7 @@ var currUser = "Daniel";
 
  action('login', function(){
 
- 	console.log(req);
+ 	//console.log(req);
  	render(index.jade);
 
 
