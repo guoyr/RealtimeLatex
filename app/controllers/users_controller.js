@@ -18,5 +18,10 @@ load("application");
  	console.log(req);
  	render(index.jade);
 
- 	
+
+ });
+
+ action('submit', function() {
+ 	console.log("submit");
+ 	render(index.jade);
  });
