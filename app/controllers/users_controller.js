@@ -3,20 +3,20 @@ load("application");
  * 
  * variables that we somehome need to get
  */
-var currUser = "Daniel"; 
+ var currUser = "Daniel"; 
 
-action(function index() {
-					 render({
-											title: "Sign In",
-											current_user: currUser,
-											in_session: true
-									});
-       });
+ action(function index() {
+ 	render({
+ 		title: "Sign In",
+ 		current_user: currUser,
+ 		in_session: true
+ 	});
+ });
 
-action('login', function(){
+ action('login', function(){
 
-	console.log(req);
-	render(index.jade);
+ 	console.log(req);
+ 	render(index.jade);
 
-	
-});
+ 	
+ });
