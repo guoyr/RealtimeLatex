@@ -22,6 +22,7 @@ var User = new Schema({
 });
 
 var userModel = mongoose.model('User', User);
+var documentModel = mongoose.model('Document', Document);
 
  action(function index() {
  	console.log("at index");
@@ -32,22 +33,23 @@ var userModel = mongoose.model('User', User);
  	});
  });
 
- action('login', function(){
-
- 	console.log(req);
- 	render(index.jade);
-
-
- });
 
  action(function submit() {
 
  	console.log("at submit");
- 	console.log(req.body.username);
- 	render();
- 	u1 = new userModel();
- 	u1.username = "Daniel";
- 	u1.passowrd = "1234";
- 	u1.save();
- 	console.log("u1 saved");
+ 	
+ 	userModel.findOne({'username':req.body.username}, function(err,user){
+ 		if (user == null) {
+ 			u1 = new userModel();
+ 			u1.username = req.body.username;
+ 			u1.passowrd = req.body.password;
+ 			u1.save();
+ 			console.log("new user saved");
+ 		};
+
+ 		render({
+ 		username = req.body.username
+ 		});
+ 	})
+ 	
  });
