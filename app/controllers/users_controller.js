@@ -7,6 +7,7 @@ var currUser = "Daniel";
 
 
  action(function index() {
+ 	console.log("at index");
  	render({
  		title: "Sign In",
  		current_user: currUser,
