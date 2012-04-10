@@ -23,7 +23,7 @@ var currUser = "Daniel";
 
  });
 
- action('submit', function() {
+ action(function submit() {
  	console.log("submit");
  	render();
  	u1 = new UserModel();
