@@ -22,7 +22,7 @@ var User = new Schema({
 });
 
 var userModel = mongoose.model('User', User);
-//var documentModel = mongoose.model('Document', Document);
+var documentModel = mongoose.model('Document', Document);
 
  action(function index() {
  	console.log("at index");
@@ -37,9 +37,9 @@ var userModel = mongoose.model('User', User);
  action(function submit() {
 
  	console.log("at submit");
- 	
+ 	/*
  	userModel.findOne({'username':req.body.username}, function(err,user){
- 		/*
+ 		
  		if (user == null) {
  			u1 = new userModel();
  			u1.username = req.body.username;
@@ -47,11 +47,10 @@ var userModel = mongoose.model('User', User);
  			u1.save();
  			console.log("new user saved");
  		};
- 		*/
-
+ 		
  		render({
  			username = req.body.username
  		});
  	})
- 	
+ 	*/
  });
