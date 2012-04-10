@@ -4,7 +4,24 @@ load("application");
  * variables that we somehome need to get
  */
 var currUser = "Daniel"; 
+var mongoose = require('mongoose');
 
+mongoose.connect('mongodb://heroku:heroku@staff.mongohq.com:10090/app3589375');
+
+Schema = mongoose.Schema;
+
+var Document = new Schema({
+	content: String
+});
+
+var User = new Schema({
+	username: String,
+	email: String,
+	password: String,
+	docID: [Object]
+});
+
+var userModel = mongoose.model('User', User);
 
  action(function index() {
  	console.log("at index");
