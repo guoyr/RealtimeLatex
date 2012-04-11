@@ -35,7 +35,7 @@ var documentModel = mongoose.model('Document', Document);
 
 
  action(function submit() {
-
+/*
  	console.log("at submit");
  	
  	userModel.findOne({'username':req.body.username}, function(err,user){
@@ -47,7 +47,7 @@ var documentModel = mongoose.model('Document', Document);
  			u1.save();
  			console.log("new user saved");
  		};
- 	})
- 	
+ 	});
+ */	
  	render();
  });
