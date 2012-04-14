@@ -21,7 +21,7 @@ Schema = mongoose.Schema;
 
 
 var Document = new Schema({
-	title = String,
+	title: String,
 	content: [String]
 });
 
@@ -58,9 +58,8 @@ action(function submit() {
  	});
 
  	
- 	
- 	render({
- 		username: req.body.username
- 		docs = 
+ 	render("index", {
+ 		title: "Hello",
+ 		curUser: req.body.username
  	});
  });
