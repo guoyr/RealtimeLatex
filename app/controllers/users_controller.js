@@ -9,7 +9,7 @@ var currUser = "Daniel";
  	console.log("at index");
  	render({
  		title: "Sign In",
- 		current_user: currUser,
+ 		username: currUser,
  		in_session: true,
  		//token: '1a599ac4b4689238e6c10d7b5c77e76d098a3856'
  	});
@@ -58,8 +58,8 @@ action(function submit() {
  	});
 
  	
- 	render("index", {
+ 	render("submit", {
  		title: "Hello",
- 		curUser: req.body.username
+ 		username: req.body.username
  	});
  });
