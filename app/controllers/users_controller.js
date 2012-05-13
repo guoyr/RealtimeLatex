@@ -58,8 +58,9 @@ action(function submit() {
  	});
 
  	
- 	render("submit", {
+ 	render("index", {
  		title: "Hello",
- 		username: req.body.username
+ 		username: req.body.username,
+ 		in_session: true
  	});
  });
