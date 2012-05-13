@@ -16,8 +16,7 @@ var currUser = "Daniel";
  });
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://nocgzh:xuan1231@staff.mongohq.com:10090/app3589375
-')
+mongoose.connect('mongodb://nocgzh:xuan1231@staff.mongohq.com:10090/app3589375');
 Schema = mongoose.Schema;
 
 
